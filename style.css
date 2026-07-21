@@ -1,0 +1,131 @@
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    background-color: #a2dca3;
+    font-family: "Chillax", sans-serif;
+    background-image: url(Assets/Tiles_Lower_Opacity.png);
+    background-repeat: repeat;
+    background-size: 700px;
+}
+
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+    flex: 1;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: #123524;
+    padding: 0%;
+    margin: 0%;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #40826D;
+}
+
+.navbar li{
+    float: left;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    text-align: center;
+}
+
+/*Font defaults: 35 for h1, 20 for p, 18 for captions*/
+h1 {
+    text-align: center;
+    font-size: 35px;
+}
+
+p {
+    font-size: 20px;
+}
+
+img {
+    border-radius: 50px;
+}
+
+.gallery{
+    display: inline-block;
+    margin: 5px;
+    width: 400px;
+}
+
+.gallery .description{
+    padding: 10px;
+    text-align: center;
+}
+
+.gallery:hover img {
+    border: 3px solid #40826D;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    max-height: 500px;
+    display: inline-block;
+    border: 3px solid #123524;
+    border-radius: 50px;
+}
+
+
+.homepage_highlight_gallery ul{
+    list-style-type: none;
+    padding: 0%;
+    margin: 0%;
+    overflow: hidden;
+}
+
+/*
+.homepage_highlight_gallery li{
+    height: 25em;
+    width: 25em;
+    max-width: 500px;
+    max-height: 500px;
+    display: inline-block;
+    border: 3px solid #123524;
+}
+*/
+
+.homepage_highlight_gallery a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+
+@font-face {
+    font-family: "Chillax";
+    src: url("Assets/Fonts/Chillax-Regular.woff2") format("woff2"), url("Assets/Fonts/Chillax-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Chillax";
+    src: url("Assets/Fonts/Chillax-Bold.woff2") format("woff2"), url("Assets/Fonts/Chillax-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
